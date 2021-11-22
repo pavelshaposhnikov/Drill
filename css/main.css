@@ -260,6 +260,11 @@ summary::marker {
     */
 }
 
+.mint__title span {
+    -webkit-text-stroke: 1px #fcfcfc;
+    color: transparent;
+}
+
 .countdown-timer {
     padding: 100px 0px;
     display: flex;
@@ -272,6 +277,7 @@ summary::marker {
     margin-right: 0.5rem;
     font-size: 144px;
     font-weight: 800;
+    margin-right: 80px;
 }
   
 .countdown-timer > div:after {
@@ -296,6 +302,25 @@ summary::marker {
   
 .countdown-timer > .seconds:after {
     content: 'seconds';
+}
+
+.dots {
+    position: relative;
+}
+
+.dots::after, .dots::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    width: 32px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid #3409FF;
+}
+
+.dots::after {
+    top: 105px;
 }
 
 .mint__btn {
