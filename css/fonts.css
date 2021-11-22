@@ -1,0 +1,51 @@
+/* Dewi Font */
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('../fonts/RFDewiExpanded-Ultrabold.ttf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('../fonts/RFDewiExpanded-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('../fonts/RFDewiExpanded-Semibold.ttf');
+    font-weight: 600;
+}
+
+/* Gilroy Font */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Black.ttf');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Semibold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.ttf');
+    font-weight: 400;
+}
