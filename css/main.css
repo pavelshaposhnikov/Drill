@@ -90,6 +90,11 @@ summary::marker {
     transition: all 0.8s;
 }
 
+.general__title span, .mint__title span, .about__title span, .map__title span, .team__title span {
+    -webkit-text-stroke: 1px #fcfcfc;
+    color: transparent;
+}
+
 
 /*========================
         Сontainer 
@@ -269,9 +274,10 @@ summary::marker {
     font-family: 'RF Dewi';
     display: inline-block;
     padding-right: 0.5rem;
-    margin-right: 0.5rem;
+    margin-right: 80px;
     font-size: 144px;
     font-weight: 800;
+    min-width: 240px;
 }
   
 .countdown-timer > div:after {
@@ -280,6 +286,7 @@ summary::marker {
     font-size: 21px;
     font-weight: 500;
     text-transform: uppercase;
+    margin-top: 25px;
 }
   
 .countdown-timer > .days:after {
@@ -296,6 +303,25 @@ summary::marker {
   
 .countdown-timer > .seconds:after {
     content: 'seconds';
+}
+
+.dots {
+    position: relative;
+}
+
+.dots::after, .dots::before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    right: 25px;
+    width: 32px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid #3409FF;
+}
+
+.dots::after {
+    top: 115px;
 }
 
 .mint__btn {
