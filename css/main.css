@@ -113,19 +113,10 @@ summary::marker {
 ==========================*/
 
 .header {
-    position: relative;
-}
-
-.header:before {
-    content: "";
-    background: url(../img/header/effect.svg);
-    background-repeat: no-repeat;
     position: absolute;
-    top: -20px;
-    left: 0;
+    z-index: 28;
+    top: 0;
     width: 100%;
-    height: 726px;
-    z-index: -1;
 }
 
 .header__inner {
@@ -137,7 +128,7 @@ summary::marker {
 
 .logo {
     width: 130px;
-    height: 85px;
+    height: 72px;
 }
 
 .nav__list {
@@ -187,18 +178,48 @@ summary::marker {
 
 .general::after {
     content: "";
-    background: url(../img/general/img.png) center center no-repeat;
+    background: url(../img/general/effect.svg);
     position: absolute;
-    max-width: 1388px;
+    max-width: 1510px;
     width: 100%;
-    height: 1544px;
-    right: calc(39% - 1388px / 2);
-    bottom: -755px;
+    height: 1585px;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.general:before {
+    content: "";
+    background: url(../img/header/effect.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -92px;
+    left: 0;
+    width: 100%;
+    height: 726px;
     z-index: -1;
 }
 
 .general__inner {
-    margin-top: 130px;
+    position: relative;
+    margin-top: 68px;
+}
+
+.general__content {
+    position: absolute;
+    left: 0;
+    top: 154px;
+    z-index: 292;
+}
+
+.general__img {
+    width: 100%;
+}
+
+.general__img img {
+    margin-left: 437px;
+    max-width: 787px;
+    width: 100%;
 }
 
 .general__title {
@@ -212,7 +233,7 @@ summary::marker {
     width: 100%;
     font-size: 19px;
     line-height: 26px;
-    margin: 75px 0 55px;
+    margin: 70px 0 49px;
 }
 
 .general__desc span {
@@ -233,12 +254,18 @@ summary::marker {
     transition: all 0.4s ease;
 }
 
+@media (max-width: 1600px) {
+    .general:after {
+        max-width: 1359px;
+    }
+}
+
 /*========================
          Mint 
 ==========================*/
 
 .mint {
-    margin-top: 255px;
+    margin-top: 155px;
     position: relative;
     z-index: 28;
 }
@@ -300,7 +327,7 @@ summary::marker {
 .dots::after, .dots::before {
     content: '';
     position: absolute;
-    top: 60px;
+    top: 65px;
     right: 25px;
     width: 32px;
     height: 30px;
@@ -309,7 +336,7 @@ summary::marker {
 }
 
 .dots::after {
-    top: 115px;
+    top: 110px;
 }
 
 .mint__btn {
@@ -437,7 +464,7 @@ summary::marker {
 ==========================*/
 
 .map {
-    margin-top: 200px;
+    margin-top: 250px;
 }
 
 .map__title {
@@ -536,7 +563,7 @@ summary::marker {
 ==========================*/
 
 .team {
-    margin-top: 250px;
+    margin-top: 230px;
     position: relative;
 }
 
@@ -613,7 +640,7 @@ summary::marker {
 ==========================*/
 
 .faq {
-    margin: 240px 0 180px;
+    margin: 260px 0 180px;
 }
 
 .faq__title {
