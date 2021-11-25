@@ -17,7 +17,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body id="body">
     <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
@@ -48,6 +48,51 @@
                         </li>
                     </ul>
                 </nav> <!-- /.nav -->
+                <div class="mobile__nav-wrapper">
+                    <button id="burger" class="open__mobile">
+                        <span class="burger"></span>
+                        <span class="burger-text">Menu</span>
+                    </button>
+                    <nav class="mobile-nav" id="mobile-nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link" target="_blank" data-scroll="#header">Main</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link" target="_blank" data-scroll="#mint">Mint</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link" target="_blank" data-scroll="#about">Our Story</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link" target="_blank" data-scroll="#map">Roadmap</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link" target="_blank" data-scroll="#team">Team</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link" target="_blank" data-scroll="#faq">Faq</a>
+                            </li>
+                        </ul>
+                        <ul class="socials">
+                            <li class="socials-item">
+                                <a href="https://twitter.com/nft_drillheadz" target="_blank">
+                                    <img src="img/icons/twitter.svg" alt="Twitter icon">
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a href="https://www.instagram.com/drillheadz/" target="_blank">
+                                    <img src="img/icons/inst.svg" alt="Inst icon">
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a href="https://discord.gg/drillheadz" target="_blank">
+                                    <img src="img/icons/discord.svg" alt="Discord icon">
+                                </a>
+                            </li>
+                        </ul> <!-- /.socials -->
+                    </nav> <!-- /.mobile-nav -->
+                </div> <!-- /.mobile__nav-wrapper -->
                 <ul class="socials">
                     <li class="socials-item">
                         <a href="https://twitter.com/nft_drillheadz" target="_blank">
@@ -229,8 +274,7 @@
                     <li class="team__card">
                         <img src="img/team/team1.png" alt="Team img" class="team__card-img">
                         <p class="team__card-name">The Goat</p>
-                        <p class="team__card-desc">The craziest among us,and ironically.</p>
-                        <p class="team__card-desc">The founder</p>
+                        <p class="team__card-desc">The craziest among us,and ironically.<br>The founder</p>
                     </li>
                     <li class="team__card">
                         <img src="img/team/team2.png" alt="Team img" class="team__card-img">
@@ -346,5 +390,36 @@
     <script type="text/javascript" src="js/retina.js"></script>
     <!-- Main.js file -->
     <script src="js/app.js"></script>
+    <script>
+        let burger = document.getElementById('burger'),
+        nav    = document.getElementById('mobile-nav'),
+        slowmo = document.getElementById('slowmo');
+        body   = document.getElementById('body');
+
+        // Открытие мобильного Гамбургер меню
+        $('.nav__link').on('click', function(event){
+        $('#body').removeClass('no-scroll');
+        $('.mobile-nav').removeClass('is-open');
+        $('.open__mobile').removeClass('is-open');
+        });    
+
+        burger.addEventListener('click', function(e){
+        this.classList.toggle('is-open');
+        nav.classList.toggle('is-open');
+        });
+
+        burger.addEventListener('click', function(e){
+        body.classList.toggle('no-scroll');
+        });
+
+        slowmo.addEventListener('click', function(e){
+        this.classList.toggle('is-slowmo');
+        });
+
+        burger.addEventListener('click', function(e){
+        this.classList.toggle('is-open');
+        nav.classList.toggle('is-open');
+        });
+    </script>
 </body>
 </html>
