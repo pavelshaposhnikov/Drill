@@ -122,13 +122,26 @@ summary::marker {
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 428px) {
     .title {
         font-size: 40px;
         line-height: 40px;
     }
 }
 
+@media (max-width: 365px) {
+    .title {
+        font-size: 38px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 320px) {
+    .title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
 
 /*========================
         Сontainer 
@@ -153,7 +166,7 @@ summary::marker {
 }
 
 .header__inner {
-    margin-top: 20px;
+    margin-top: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,7 +174,19 @@ summary::marker {
 
 .logo {
     width: 130px;
-    height: 72px;
+    height: 85px;
+    position: relative;
+}
+
+.logo__text {
+    font-family: 'RF Dewi';
+    max-width: 72px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 16px;
+    position: absolute;
+    right: 0;
+    top: 30px;
 }
 
 .nav__list {
@@ -425,7 +450,7 @@ summary::marker {
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 428px) {
 
     .mobile-nav .nav__list {
         margin-top: 175px;
@@ -439,6 +464,19 @@ summary::marker {
     .mobile-nav.is-open .socials {
         left: 130px;
         top: 525px;
+    }
+}
+
+@media (max-width: 365px) {
+    .mobile-nav.is-open .socials {
+        left: 109px;
+        top: 525px;
+    }
+}
+
+@media (max-width: 320px) {
+    .mobile-nav.is-open .socials {
+        left: 75px;
     }
 }
 
@@ -617,7 +655,7 @@ summary::marker {
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 428px) {
 
     .general__content {
         top: 175px;
@@ -637,6 +675,32 @@ summary::marker {
         max-width: 240px;
         height: 60px;
         font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    .general__title {
+        font-size: 92px;
+        line-height: 73px;
+    }
+}
+
+@media (max-width: 365px) {
+    .general__title {
+        font-size: 86px;
+        line-height: 68px;
+    }
+
+    .general__desc {
+        max-width: 295px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    .general__title {
+        font-size: 80px;
+        line-height: 62px;
     }
 }
 
@@ -759,12 +823,28 @@ summary::marker {
 @media (max-width: 1155px) {
     .countdown-timer > div {
         font-size: 125px;
-        min-width: 205px;
+        min-width: 215px;
         margin: 0 auto;
+    }
+
+    .countdown-timer > div:after {
+        margin-top: 10px;
+    }
+
+    .dots::after, .dots::before {
+        right: -5px;
+    }
+
+    .dots::before {
+        top: 40px;
+    }
+
+    .dots::after {
+        top: 83px;
     }
 }
 
-@media (max-width: 835px) {
+@media (max-width: 990px) {
 
     .countdown-timer > div {
         font-size: 87px;
@@ -867,10 +947,14 @@ summary::marker {
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 428px) {
 
     .mint {
         margin-top: 220px;
+    }
+
+    .mint__title {
+        max-width: 370px;
     }
 
     .countdown-timer > div {
@@ -903,6 +987,44 @@ summary::marker {
     }
 }
 
+@media (max-width: 365px) {
+    .countdown-timer > div {
+        font-size: 38px;
+        min-width: 66px;
+    }
+
+    .dots::before {
+        top: 11px;
+    }
+
+    .dots::after {
+        top: 26px;
+    }
+
+    .countdown-timer > div:after {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 320px) {
+    .countdown-timer > div {
+        font-size: 34px;
+        min-width: 59px;
+    }
+
+    .dots::after {
+        top: 23px;
+    }
+
+    .dots::before {
+        top: 11px;
+    }
+
+    .dots:before, .dots:after {
+        width: 8px;
+        height: 8px;
+    }
+}
 
 /*========================
           About 
@@ -1058,6 +1180,10 @@ summary::marker {
     .about {
         margin-top: 115px;
     }
+
+    .about__card-value {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1079,7 +1205,7 @@ summary::marker {
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 428px) {
 
     .about {
         margin-top: 160px;
@@ -1126,6 +1252,40 @@ summary::marker {
         height: 388px;
     }
 
+}
+
+@media (max-width: 365px) {
+    .about__desc {
+        font-size: 14px;
+        max-width: 297px;
+        margin: 0 auto;
+    }
+    
+    .about__card-name {
+        font-size: 15px;
+    }
+
+    .about__card-value {
+        font-size: 19px;
+    }
+
+    .about__img, .about__img img {
+        height: 335px;
+    }
+}
+
+@media (max-width: 320px) {
+    .about__card-name {
+        font-size: 14px;
+    }
+
+    .about__card-value {
+        font-size: 18px;
+    }
+
+    .about__img, .about__img img {
+        height: 310px;
+    }
 }
 
 /*========================
@@ -1393,7 +1553,7 @@ summary::marker {
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 428px) {
 
     .map__cards {
         margin-top: 80px;
@@ -1431,6 +1591,47 @@ summary::marker {
         text-align: center;
         font-size: 12px;
         line-height: 20px;
+    }
+}
+
+@media (max-width: 365px) {
+
+    .map__card-name {
+        margin-bottom: 5px;
+    }
+
+    .map__card-img {
+        width: 27px;
+        height: 36px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .map__card {
+        padding: 10px 10px;
+    }
+
+    .map__card-img {
+        width: 20px;
+        height: 25px;
+    }
+
+    .map__card-desc {
+        font-size: 11px;
+    }
+
+    .map__card-pretitle {
+        font-size: 13px;
+    }
+
+    .map__card-value {
+        font-size: 30px;
+    }
+
+    .map__card-title {
+        font-size: 14px;
+        line-height: 17px;
     }
 }
 
@@ -1538,6 +1739,10 @@ summary::marker {
     .team {
         margin-top: 200px;
     }
+
+    .team::after {
+        bottom: calc(24% - 1669px);
+    }
 }
 
 @media (max-width: 615px) {
@@ -1584,14 +1789,14 @@ summary::marker {
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 428px) {
 
     .team {
         margin-top: 119px;
     }
 
     .team::before {
-        top: calc(85% - 1679px);
+        top: calc(69% - 1679px);
     }
 
     .team:after {
@@ -1622,6 +1827,24 @@ summary::marker {
         font-size: 12px;
     }
 }
+
+@media (max-width: 365px) {
+    .team__card-img {
+        height: 170px;
+    }
+
+    .team__card-desc {
+        max-width: 127px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 320px) {
+    .team__card-img {
+        height: 155px;
+    }
+}
+
 /*========================
            FAQ 
 ==========================*/
@@ -1706,9 +1929,13 @@ summary::marker {
         font-size: 21px;
         padding-bottom: 25px;
     }
+
+    .faq__accordion-title h3 {
+        max-width: 690px;
+    }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 428px) {
     .faq {
         margin: 80px 0;
     }
@@ -1728,8 +1955,25 @@ summary::marker {
 
     .faq__accordion-content p {
         padding-bottom: 40px;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 19px;
+    }
+}
+
+@media (max-width: 365px) {
+    .faq__accordion-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    .faq__accordion-title {
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+
+    .faq__accordion-title h3 {
+        max-width: 260px;
     }
 }
 
@@ -1823,7 +2067,7 @@ summary::marker {
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 427px) {
 
     .footer {
         padding-bottom: 0;
@@ -1854,5 +2098,18 @@ summary::marker {
 
     .footer__adress, .footer__copyright {
         font-size: 13px;
+    }
+}
+
+@media (max-width: 369px) {
+
+    .footer__adress, .footer__copyright {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer__adress {
+        font-size: 11px;
     }
 }
