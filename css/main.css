@@ -176,6 +176,7 @@ summary::marker {
     width: 130px;
     height: 85px;
     position: relative;
+    z-index: 2000;
 }
 
 .logo__text {
@@ -1587,7 +1588,7 @@ summary::marker {
 @media (max-width: 428px) {
 
     .map {
-        margin-top: 85px;
+        margin-top: 106px;
     }
 
     .map__cards {
