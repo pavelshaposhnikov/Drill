@@ -735,6 +735,7 @@ summary::marker {
     margin-top: 155px;
     position: relative;
     z-index: 27;
+    display: none;
 }
 
 .mint__inner {
@@ -1054,8 +1055,9 @@ summary::marker {
 ==========================*/
 
 .about {
-    margin-top: 260px;
+    margin-top: 130px;
     position: relative;
+    z-index: 288;
 }
 
 .about:before {
@@ -1067,6 +1069,18 @@ summary::marker {
     left: 0;
     width: 100%;
     height: 1669px;
+    z-index: -1;
+}
+
+.about::after {
+    content: "";
+    position: absolute;
+    background: url(../img/about/dec1.png);
+    left: 0;
+    bottom: -288px;
+    max-width: 266px;
+    width: 100%;
+    height: 363px;
     z-index: -1;
 }
 
@@ -1131,8 +1145,8 @@ summary::marker {
 }
 
 .about__card-value {
-    margin-top: 30px;
-    font-size: 32px;
+    margin-top: 15px;
+    font-size: 25px;
     font-weight: 700;
 }
 
@@ -1149,15 +1163,32 @@ summary::marker {
     height: 732px;
 }
 
+@media (max-width: 1600px) {
+    .about::after {
+        left: -70px;
+    }
+}
+
+@media (max-width: 1390px) {
+    .about::after {
+        left: -115px;
+        bottom: -256px;
+    }
+}
+
+@media (max-width: 1330px) {
+    .about::after {
+        display: none;
+    }
+}
+
 @media (max-width: 1290px) {
     .about__img {
         max-width: 755px;
     }
-}
 
-@media (max-width: 1165px) {
     .about__card-value {
-        font-size: 24px;
+        font-size: 23px;
     }
 }
 
@@ -1252,10 +1283,6 @@ summary::marker {
         margin-top: 35px;
     }
 
-    .about__info-card {
-        align-items: baseline;
-    }
-
     .about__info-card:nth-child(4), .about__info-card:nth-child(5) {
         margin-bottom: 0;
     }
@@ -1275,7 +1302,7 @@ summary::marker {
     }
 
     .about__card-value {
-        font-size: 20px;
+        font-size: 17px;
         margin-top: 7px;
     }
 
@@ -1326,6 +1353,31 @@ summary::marker {
 
 .map {
     margin-top: 250px;
+    position: relative;
+}
+
+.map::before {
+    content: "";
+    position: absolute;
+    background: url(../img/map/dec4.png);
+    left: 0;
+    bottom: -373px;
+    max-width: 217px;
+    width: 100%;
+    height: 375px;
+    z-index: -1;
+}
+
+.map::after {
+    content: "";
+    position: absolute;
+    background: url(../img/map/dec3.png);
+    right: 0;
+    top: -177px;
+    max-width: 266px;
+    width: 100%;
+    height: 373px;
+    z-index: -1;
 }
 
 .map__title {
@@ -1417,6 +1469,31 @@ summary::marker {
     margin-bottom: 10px;
     width: 34px;
     height: 48px;
+}
+
+@media (max-width: 1600px) {
+    .map:before {
+        left: -40px;
+        bottom: -302px;
+    }
+}
+
+@media (max-width: 1390px) {
+    .map:after {
+        top: -225px;
+    }
+}
+
+@media (max-width: 1330px) {
+    .map:before {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .map:after {
+        display: none;
+    }
 }
 
 @media (max-width: 1050px) {
@@ -1731,7 +1808,7 @@ summary::marker {
     margin-bottom: 30px;
     max-width: 289px;
     width: 100%;
-    height: 333px;
+    height: 316px;
 }
 
 .team__card-name {
@@ -1745,8 +1822,17 @@ summary::marker {
 .team__card-desc {
     font-weight: 500;
     font-size: 17px;
-    color: #3409FF;
+    color: #FFEFD5;
     max-width: 240px;
+}
+
+@media (max-width: 1150px) {
+    .team__card-img {
+        margin-bottom: 30px;
+        max-width: 289px;
+        width: 100%;
+        height: 264px;
+    }
 }
 
 @media (max-width: 990px) {
@@ -1887,6 +1973,20 @@ summary::marker {
 
 .faq {
     margin: 260px 0 180px;
+    position: relative;
+}
+
+
+.faq::after {
+    content: "";
+    position: absolute;
+    background: url(../img/faq/dec2.png);
+    right: 0;
+    top: -177px;
+    max-width: 248px;
+    width: 100%;
+    height: 368px;
+    z-index: -1;
 }
 
 .faq__title {
@@ -1944,6 +2044,12 @@ summary::marker {
 
 .active .faq__accordion-title {
     color: #3409FF;
+}
+
+@media (max-width: 1200px) {
+    .faq::after {
+        display: none;
+    }
 }
 
 @media (max-width: 990px) {
@@ -2065,6 +2171,18 @@ summary::marker {
     height: 40px;
 }
 
+.footer__socials .socials-item:nth-child(1) a {
+    background-color: #1DA1F2;
+}
+
+.footer__socials .socials-item:nth-child(2) a {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.footer__socials .socials-item:nth-child(3) a {
+    background-color: #5865F2;
+}
+
 .footer__links {
     display: flex;
     flex-direction: column;
@@ -2084,6 +2202,10 @@ summary::marker {
 
 .footer__adress:hover, .footer__terms:hover {
     text-decoration: underline;
+}
+
+.footer__adress {
+    color: #FFEFD5;
 }
 
 .footer__copyright {
