@@ -426,14 +426,19 @@ summary::marker {
 }
 
 @media (max-width: 414px) {
+
+    .mobile-nav .nav__list {
+        margin-top: 175px;
+    }
+
     .mobile-nav.is-open .socials img {
         height: 15px;
         width: 15px;
     }
 
-    .mobile-nav.is-open .socials a {
-        height: 27px;
-        width: 27px;
+    .mobile-nav.is-open .socials {
+        left: 105px;
+        top: 525px;
     }
 }
 
@@ -625,6 +630,7 @@ summary::marker {
 
     .general__desc {
         max-width: 350px;
+        margin: 45px 0 50px;
     }
 
     .general__btn {
@@ -1574,8 +1580,13 @@ summary::marker {
         margin-top: 119px;
     }
 
+    .team::before {
+        top: calc(85% - 1679px);
+    }
+
     .team:after {
         bottom: calc(78% - 1669px);
+        background-position: right;
     }
 
     .team__cards {
@@ -1806,7 +1817,7 @@ summary::marker {
 
     .footer::before {
         bottom: -120px;
-        height: 600px;
+        height: 680px;
     }
 
     .footer__socials .socials-item {
