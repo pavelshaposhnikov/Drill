@@ -437,7 +437,7 @@ summary::marker {
     }
 
     .mobile-nav.is-open .socials {
-        left: 105px;
+        left: 130px;
         top: 525px;
     }
 }
@@ -620,7 +620,7 @@ summary::marker {
 @media (max-width: 414px) {
 
     .general__content {
-        top: 165px;
+        top: 175px;
     }
 
     .general__title {
@@ -1590,7 +1590,7 @@ summary::marker {
     }
 
     .team__cards {
-        margin-top: 60px;
+        margin-top: 85px;
     }
 
     .team__card:nth-child(3), .team__card:nth-child(4) {
