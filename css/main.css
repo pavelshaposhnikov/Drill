@@ -973,11 +973,11 @@ summary::marker {
     }
 
     .dots::before {
-        top: 15px;
+        top: 14px;
     }
 
     .dots::after {
-        top: 31px;
+        top: 30px;
     }
 
     .mint__btn {
