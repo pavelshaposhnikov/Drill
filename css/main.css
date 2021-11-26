@@ -657,6 +657,28 @@ summary::marker {
 
 @media (max-width: 428px) {
 
+    .general__inner:before {
+        content: "";
+        position: absolute;
+        background: url(../img/general/dec1.png);
+        width: 325px;
+        height: 558px;
+        top: -121px;
+        right: -129px;
+        transform: translate(0, 0) scale(0.3);
+    }
+
+    .general__inner:after {
+        content: "";
+        position: absolute;
+        background: url(../img/general/dec2.png);
+        width: 384px;
+        height: 625px;
+        left: -150px;
+        top: 294px;
+        transform: translate(0, 0) scale(0.3);
+    }
+
     .general__content {
         top: 175px;
     }
@@ -1094,9 +1116,9 @@ summary::marker {
     justify-content: center;
     width: 60px;
     height: 60px;
-    background: linear-gradient(46.2deg, #0E0053 1.42%, #3409FF 96.63%);
+    background: linear-gradient(90deg, rgba(255,239,213,1) 0%, rgba(255,250,205,1) 49%, rgba(227,222,169,1) 75%);
     border-radius: 12px;
-    box-shadow: 0px 0px 20px 5px rgba(20, 36, 236, 0.4);
+    box-shadow: 0px 0px 20px 5px rgb(255 239 213 / 40%);
     pointer-events: none;
 }
 
@@ -1104,7 +1126,7 @@ summary::marker {
     margin-top: 25px;
     font-size: 21px;
     font-weight: 500;
-    color: #3409FF;
+    color: #FFEFD5;
 }
 
 .about__card-value {
