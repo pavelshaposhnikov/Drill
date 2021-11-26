@@ -870,7 +870,7 @@ summary::marker {
 @media (max-width: 414px) {
 
     .mint {
-        margin-top: 190px;
+        margin-top: 220px;
     }
 
     .countdown-timer > div {
@@ -885,6 +885,7 @@ summary::marker {
     .dots:before, .dots:after {
         width: 10px;
         height: 10px;
+        border: 1px solid #3409FF;
     }
 
     .dots::before {
