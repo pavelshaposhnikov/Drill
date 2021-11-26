@@ -1233,6 +1233,10 @@ summary::marker {
         margin-top: 160px;
     }
 
+    .about:before {
+        top: calc(187% - 1669px);
+    }
+
     .about__info {
         margin-top: 30px;
     }
@@ -1245,6 +1249,10 @@ summary::marker {
 
     .about__info-cards {
         margin-top: 35px;
+    }
+
+    .about__info-card {
+        align-items: baseline;
     }
 
     .about__info-card:nth-child(4), .about__info-card:nth-child(5) {
@@ -1271,6 +1279,7 @@ summary::marker {
     }
 
     .about__img, .about__img img {
+        display: none;
         height: 388px;
     }
 
@@ -1576,6 +1585,10 @@ summary::marker {
 }
 
 @media (max-width: 428px) {
+
+    .map {
+        margin-top: 85px;
+    }
 
     .map__cards {
         margin-top: 80px;
