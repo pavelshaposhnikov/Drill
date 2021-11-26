@@ -868,6 +868,11 @@ summary::marker {
 }
 
 @media (max-width: 414px) {
+
+    .mint {
+        margin-top: 170px;
+    }
+
     .countdown-timer > div {
         font-size: 42px;
         min-width: 73px;
