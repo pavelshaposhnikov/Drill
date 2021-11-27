@@ -1358,18 +1358,6 @@ summary::marker {
     z-index: 500;
 }
 
-.map::before {
-    content: "";
-    position: absolute;
-    background: url(../img/map/dec1.png);
-    right: 124px;
-    bottom: -428px;
-    max-width: 369px;
-    width: 100%;
-    height: 369px;
-    z-index: 400;
-}
-
 .map::after {
     content: "";
     position: absolute;
@@ -1477,12 +1465,6 @@ summary::marker {
 @media (max-width: 1390px) {
     .map:after {
         top: -225px;
-    }
-}
-
-@media (max-width: 1330px) {
-    .map:before {
-        display: none;
     }
 }
 
