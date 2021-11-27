@@ -559,7 +559,7 @@ summary::marker {
     max-width: 280px;
     width: 100%;
     height: 80px;
-    background: linear-gradient(46.2deg, #0E0053 1.42%, #3409FF 96.63%);
+    background: linear-gradient(45.36deg, #020570 14.56%, #3363FF 85.92%);
     box-shadow: 0px 0px 40px rgba(52, 9, 255, 0.4);
     transition: all 0.4s ease;
 }
@@ -1065,7 +1065,7 @@ summary::marker {
     background: url(../img/about/effect.png);
     background-repeat: no-repeat;
     position: absolute;
-    top: calc(100% - 1669px);
+    top: calc(177% - 1669px);
     left: 0;
     width: 100%;
     height: 1669px;
@@ -1075,12 +1075,12 @@ summary::marker {
 .about::after {
     content: "";
     position: absolute;
-    background: url(../img/about/dec1.png);
+    background: url(../img/about/dec4.png);
     left: 0;
     bottom: -288px;
-    max-width: 266px;
+    max-width: 236px;
     width: 100%;
-    height: 363px;
+    height: 358px;
     z-index: -1;
 }
 
@@ -1266,7 +1266,8 @@ summary::marker {
     }
 
     .about:before {
-        top: calc(187% - 1669px);
+        top: calc(229% - 1669px);
+        height: 1536px;
     }
 
     .about__info {
@@ -1354,18 +1355,19 @@ summary::marker {
 .map {
     margin-top: 250px;
     position: relative;
+    z-index: 500;
 }
 
 .map::before {
     content: "";
     position: absolute;
-    background: url(../img/map/dec4.png);
-    left: 0;
-    bottom: -373px;
-    max-width: 217px;
+    background: url(../img/map/dec1.png);
+    right: 124px;
+    bottom: -428px;
+    max-width: 369px;
     width: 100%;
-    height: 375px;
-    z-index: -1;
+    height: 369px;
+    z-index: 400;
 }
 
 .map::after {
@@ -1373,8 +1375,8 @@ summary::marker {
     position: absolute;
     background: url(../img/map/dec3.png);
     right: 0;
-    top: -177px;
-    max-width: 266px;
+    top: -220px;
+    max-width: 317px;
     width: 100%;
     height: 373px;
     z-index: -1;
@@ -1471,12 +1473,6 @@ summary::marker {
     height: 48px;
 }
 
-@media (max-width: 1600px) {
-    .map:before {
-        left: -40px;
-        bottom: -302px;
-    }
-}
 
 @media (max-width: 1390px) {
     .map:after {
@@ -1507,7 +1503,7 @@ summary::marker {
     .map {
         margin-top: 150px;
         position: relative;
-        z-index: 1;
+        z-index: 400;
     }
 
     .map__title {
@@ -1755,6 +1751,7 @@ summary::marker {
 .team {
     margin-top: 230px;
     position: relative;
+    z-index: 300;
 }
 
 .team:before {
@@ -1974,6 +1971,7 @@ summary::marker {
 .faq {
     margin: 260px 0 180px;
     position: relative;
+    z-index: 300;
 }
 
 
@@ -1982,10 +1980,10 @@ summary::marker {
     position: absolute;
     background: url(../img/faq/dec2.png);
     right: 0;
-    top: -177px;
-    max-width: 248px;
+    top: -225px;
+    max-width: 310px;
     width: 100%;
-    height: 368px;
+    height: 367px;
     z-index: -1;
 }
 
