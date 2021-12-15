@@ -735,7 +735,6 @@ summary::marker {
     margin-top: 155px;
     position: relative;
     z-index: 27;
-    display: none;
 }
 
 .mint__inner {
@@ -812,13 +811,26 @@ summary::marker {
     top: 110px;
 }
 
+.mint__btns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .mint__btn {
-    max-width: 180px;
+    max-width: 257px;
+    width: 100%;
     padding: 20px 32px 21px;
     background: #030011;
     position: relative;
     margin: 0 auto;
     transition: all 0.5s ease;
+}
+
+.mint__btn:last-child {
+    background: #040226;
 }
 
 .mint__btn::before {
@@ -1005,9 +1017,9 @@ summary::marker {
     }
 
     .mint__btn {
-        max-width: 120px;
-        font-size: 12px;
-        padding: 17px 36px 17px;
+        max-width: 145px;
+        font-size: 11px;
+        padding: 10px 37px 10px;
     }
 }
 
@@ -2123,6 +2135,8 @@ summary::marker {
 .footer__inner {
     margin: 0 auto;
     text-align: center;
+    position: relative;
+    z-index: 1000;
 }
 
 .footer__logo {
