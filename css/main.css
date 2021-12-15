@@ -829,9 +829,6 @@ summary::marker {
     transition: all 0.5s ease;
 }
 
-.mint__btn:last-child {
-    background: #040226;
-}
 
 .mint__btn::before {
     content: "";
@@ -1020,6 +1017,10 @@ summary::marker {
         max-width: 145px;
         font-size: 11px;
         padding: 10px 37px 10px;
+    }
+
+    .mint__btn:last-child {
+        background: #040226;
     }
 }
 
